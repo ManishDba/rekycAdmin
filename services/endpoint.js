@@ -2,9 +2,9 @@
 
 const API = {
 
-    invokekyc: () => `admin/invoke-kyc-process-flag`,
+    invokekyc: (Uid= "") => `admin/invoke-kyc-process-flag?uid=${Uid}`,
     validEmailPassword: () => `admin/login`,
-    kyccount: () => `/admin/kycCount`
+    kyccount: (Uid= "") => `/admin/kycCount?uid=${Uid}`
 
 }
 
